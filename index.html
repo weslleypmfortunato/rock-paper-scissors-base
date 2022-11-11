@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Pedra, Papel e Tesoura</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra, Papel e Tesoura</h1>
+        <div class="end-message">
+            <p class="user-won">Parabéns! Você venceu :)</p>
+            <p class="cpu-won">Hmmm... Não foi dessa vez :/</p>
+            <p class="tie-game">Bem, essa deu empate. :|</p>
+        </div>
+        <div class="score">
+            <p class="player-score">You <span>0</span></p>
+            <p> X </p>
+            <p class="cpu-score"> <span> 0</span> CPU</p>
+        </div>
+        <div class="choices">
+            <div class="player-choice">
+            </div>
+            <div class="cpu-choice">
+            </div>
+        </div>
+        <div class="controls">
+            <div class="buttons">
+                <button id="rock" class="choice-button" disabled>Pedra</button>
+                <button id="paper" class="choice-button" disabled>Papel</button>
+                <button id="scissors" class="choice-button" disabled>Tesoura</button>
+            </div>
+            <div class="start-reset">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+                <button id="audio">Music ON</button>
+            </div>
+        </div>
+        <footer>
+            <p><a href="creditos.html">créditos</a></p>
+            <p>Feito com ♥ em São Paulo</p>
+        </footer>
+    </div>
+    <audio id="win-audio" src="./assets/sounds/win.wav"></audio>
+    <audio id="lose-audio" src="./assets/sounds/lose.wav"></audio>
+    <audio id="tie-audio" src="./assets/sounds/empate.wav"></audio>
+    <audio id="drum-audio" src="./assets/sounds/drum.mp3"></audio>
+    <audio id="game-bg-audio" class="bg-audio-active" loop="true" src="./assets/sounds/main.mp3"></audio>
+    <script src="./assets/scripts/game.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>

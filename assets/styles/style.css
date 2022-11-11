@@ -1,0 +1,133 @@
+html {
+    font-family: 'Major Mono Display', monospace;
+    background-color: rgb(30, 7, 65);
+    color: rgb(241,234,209);
+    border-color: rgb(241,234,209)
+}
+
+.container {
+    width: 550px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+    margin: 40px 0 60px 0;
+}
+
+.choices {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choices > div {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    border: dashed 1px 
+}
+
+.choices img {
+    width: 75px;
+    filter: invert(84%) sepia(27%) saturate(156%) hue-rotate(4deg) brightness(109%) contrast(89%);
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    width: 200px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px dashed;
+    margin-bottom: 10px
+}
+
+.controls {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.buttons, .start-reset {
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.start-reset {
+    flex-direction: column;
+    align-items: center;
+}
+
+.start-reset button {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+p#score-label {
+    margin-bottom: 0
+}
+
+button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: rgb(241,234,209);
+    font-family: 'Major Mono Display', monospace;
+}
+
+#start {
+    color: rgb(241,234,209);
+    background: rgb(45,139,146);
+}
+
+#reset {
+    color: rgb(241,234,209);
+    background-color: rgb(132,181,162);
+}
+
+.end-message {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    display:none;
+}
+
+.end-message p {
+    display: none
+}
+footer p {
+    text-align: center;
+}
+
+footer p:first-child {
+    margin-top: 50px;
+}
+
+a {
+    color: rgb(241,234,209);
+}
+
+.container.credits {
+    text-align: center;
+}
+
+/*Animação borda*/
+@keyframes blink { 
+    50% { 
+        border-color: rgb(132,181,162) 
+    } 
+}
+
+.animate-blink {
+    animation: blink .5s step-end infinite alternate; 
+}
